@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import-normalize;
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('./fonts/OpenSans-Regular.eot');
+  src:
+    url('./fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/OpenSans-Regular.woff') format('woff'),
+    url('./fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'OpenSans-Medium';
+  src: url('./fonts/OpenSans-Medium.eot');
+  src:
+          /*url('./fonts/OpenSans-Medium?#iefix') format('embedded-opentype'),*/
+    url('./fonts/OpenSans-Medium.woff') format('woff'),
+    url('./fonts/OpenSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('./fonts/OpenSans-Bold.eot');
+  src:
+    url('./fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/OpenSans-Bold.woff') format('woff'),
+    url('./fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f7fa;
+}
+
+html,
+button {
+  font-family: 'OpenSans-Regular', serif;
+}
+
+button,
+input,
+label:hover {
+  cursor: url('imgs/Cursor.svg'), pointer !important;
 }

@@ -1,0 +1,136 @@
+.filter {
+  width: 232px;
+  height: 252px;
+  border: rgba(255, 255, 255, 1) 1px solid;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  @media screen and (min-width: 320px) and (max-width: 500px) {
+    border: red 1px solid;
+    width: auto;
+    height: auto;
+
+    div {
+      width: 310px;
+      //height: 170px;
+
+      label {
+        margin-left: 15px;
+      }
+
+      .transfers {
+        opacity: 0;
+      }
+
+      div[id='choose-transfers'] {
+        display: none;
+
+        label {
+          font-family: OpenSans-Regular, serif;
+          color: rgba(74, 74, 74, 1);
+        }
+      }
+
+      input[name='transfers']:checked ~ div[id='choose-transfers'] {
+        display: flex;
+        border: blueviolet 1px solid;
+        //width: auto;
+        transform: translate(0, -30px) scale(0.7);
+        transition: all 0.25s ease-in-out;
+
+        fieldset {
+          display: flex;
+          transition: all 0.25s ease-in-out;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 232px;
+    height: 212px;
+    border: 0;
+    margin: 20px 0;
+
+    @media screen and (min-width: 320px) and (max-width: 500px) {
+      border: red 1px solid;
+      display: none;
+    }
+
+    legend {
+      width: 192px;
+      height: 12px;
+      padding: 0 20px;
+      margin-bottom: 10px;
+      color: rgba(74, 74, 74, 1);
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      width: auto;
+      height: 40px;
+      padding: 0 20px;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        transition: all 0.25s ease-in-out;
+        background-color: rgba(241, 252, 255, 1);
+        color: rgba(255, 255, 255, 1);
+        border: rgba(33, 150, 243, 1) 1px solid;
+      }
+
+      input {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 2px;
+        border: 1px solid rgba(154, 187, 206, 1);
+        transition: all 0.25s ease-in-out;
+
+        &::after {
+          content: '';
+          width: 0;
+          height: 0;
+          transition: all 0.25s ease-in-out;
+          overflow: hidden;
+        }
+
+        &:checked {
+          background-color: rgba(255, 255, 255, 1);
+          border-radius: 2px;
+          border: 1px solid rgba(33, 150, 243, 1);
+          background-repeat: no-repeat;
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3e%3cg class='layer'%3e%3ctitle%3eLayer 1%3c/title%3e%3cpath d='m8.29,14l-4.29,-3.84l1.21,-1.08l3.08,2.75l6.5,-5.83l1.21,1.09l-7.71,6.91z' fill='%232196F3' id='svg_2'/%3e%3c/g%3e%3c/svg%3e ");
+          transition: all 0.25s ease-in-out;
+        }
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 1);
+          border-radius: 2px;
+          border: 1px solid rgba(33, 150, 243, 1);
+          transition: all 0.25s ease-in-out;
+        }
+      }
+
+      label {
+        width: 162px;
+        padding-left: 10px;
+        color: rgba(74, 74, 74, 1);
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
