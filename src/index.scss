@@ -1,5 +1,10 @@
 @import-normalize;
 
+$accent: rgba(33, 150, 243, 1);
+$accentContrast: rgba(255, 255, 255, 1);
+$shadow: rgba(223, 229, 236, 1);
+$text: rgba(74, 74, 74, 1);
+
 @font-face {
   font-family: 'OpenSans-Regular';
   src: url('./fonts/OpenSans-Regular.eot');
@@ -15,7 +20,7 @@
   font-family: 'OpenSans-Medium';
   src: url('./fonts/OpenSans-Medium.eot');
   src:
-          /*url('./fonts/OpenSans-Medium?#iefix') format('embedded-opentype'),*/
+    url('./fonts/OpenSans-Medium.eot?#iefix') format('embedded-opentype'),
     url('./fonts/OpenSans-Medium.woff') format('woff'),
     url('./fonts/OpenSans-Medium.ttf') format('truetype');
   font-weight: 500;
@@ -55,3 +60,10 @@ input,
 label:hover {
   cursor: url('imgs/Cursor.svg'), pointer !important;
 }
+
+//@import './components/app/app.module';
+//@import './components/Button/Button.module';
+//@import './components/filterTickets/filterTickets.module';
+//@import './components/filterTransplant/filterTransplant.module';
+//@import './components/ticket/ticket.module';
+//@import './components/trip/trip.module';

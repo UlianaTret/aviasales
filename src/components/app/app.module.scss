@@ -1,3 +1,13 @@
+$accent: rgba(33, 150, 243, 1);
+$accentContrast: rgba(255, 255, 255, 1);
+
+%style-text {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
 .search {
   display: flex;
   flex-direction: column;
@@ -38,6 +48,30 @@
         align-items: center;
         margin: auto;
         width: 310px;
+      }
+
+      .button {
+        width: 502px;
+        height: 50px;
+        border-radius: 5px;
+        border: 0;
+        margin-top: 10px;
+        color: $accentContrast;
+        background-color: $accent;
+        @extend %style-text;
+        transition: all 0.25s ease-in-out;
+
+        @media screen and (min-width: 320px) and (max-width: 500px) {
+          width: 310px;
+        }
+
+        &:hover {
+          background-color: $accent;
+          color: $accentContrast;
+          border: $accent 1px solid;
+          font-size: 14px;
+          transition: all 0.25s ease-in-out;
+        }
       }
     }
   }

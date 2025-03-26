@@ -1,3 +1,8 @@
+$accent: rgba(33, 150, 243, 1);
+$accentContrast: rgba(255, 255, 255, 1);
+$shadow: rgba(223, 229, 236, 1);
+$text: rgba(74, 74, 74, 1);
+
 .ticket {
   display: flex;
   flex-direction: column;
@@ -5,7 +10,7 @@
   height: 184px;
   border-radius: 5px;
   margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $accentContrast;
   -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -31,7 +36,7 @@
     .price {
       width: 147px;
       height: 24px;
-      color: rgba(33, 150, 243, 1);
+      color: $accent;
       font-family: OpenSans-Medium, sans-serif;
       font-size: 24px;
       line-height: 24px;

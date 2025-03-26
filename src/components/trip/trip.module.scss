@@ -1,3 +1,8 @@
+$accent: rgba(33, 150, 243, 1);
+$accentContrast: rgba(255, 255, 255, 1);
+$shadow: rgba(223, 229, 236, 1);
+$text: rgba(74, 74, 74, 1);
+
 .trip {
   display: flex;
   flex-direction: row;
@@ -37,7 +42,7 @@
     :last-child {
       width: 141px;
       height: 21px;
-      color: rgba(74, 74, 74, 1);
+      color: $text;
       font-family: OpenSans-Medium, sans-serif;
       font-size: 14px;
       line-height: 21px;

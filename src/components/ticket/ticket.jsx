@@ -3,17 +3,23 @@ import React from 'react';
 import Trip from '../trip';
 
 import style from './ticket.module.scss';
-import logoS7 from './S7_Logo.svg';
 
-const Ticket = () => {
+const Ticket = ({ ticket }) => {
+  const { price, carrier, segments } = ticket;
+  const trips = segments.map((trip, i) => {
+    return <Trip trip={trip} key={i} />;
+  });
   return (
     <div className={style.ticket}>
       <div className={style.header}>
-        <p className={style.price}>13 400 Р</p>
-        <img className={style.logo} src={logoS7} alt="Логотип авиакомпании" />
+        <p className={style.price}>{new Intl.NumberFormat('ru-RU').format(price)} Р</p>
+        <img
+          className={style.logo}
+          src={`http://pics.avs.io/99/36/${carrier}.png`}
+          alt={'Логотип авиакомпании ' + carrier}
+        />
       </div>
-      <Trip />
-      <Trip />
+      {trips}
     </div>
   );
 };
