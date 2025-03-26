@@ -16,26 +16,26 @@ $text: rgba(74, 74, 74, 1);
   font-style: normal;
 }
 
-//@font-face {
-//  font-family: 'OpenSans-Medium';
-//  src: url('./fonts/OpenSans-Medium.eot');
-//  src:
-//    url('./fonts/OpenSans-Medium.eot?#iefix') format('embedded-opentype'),
-//    url('./fonts/OpenSans-Medium.woff') format('woff'),
-//    url('./fonts/OpenSans-Medium.ttf') format('truetype');
-//  font-weight: 500;
-//  font-style: normal;
-//}
 @font-face {
   font-family: 'OpenSans-Medium';
-  src: url('./fonts/OpenSans-Regular.eot');
+  src: url('./fonts/OpenSans-Medium.eot');
   src:
-          url('./fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-          url('./fonts/OpenSans-Regular.woff') format('woff'),
-          url('./fonts/OpenSans-Regular.ttf') format('truetype');
-  font-weight: normal;
+    url('./fonts/OpenSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/OpenSans-Medium.woff') format('woff'),
+    url('./fonts/OpenSans-Medium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
+//@font-face {
+//  font-family: 'OpenSans-Medium';
+//  src: url('./fonts/OpenSans-Regular.eot');
+//  src:
+//          url('./fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+//          url('./fonts/OpenSans-Regular.woff') format('woff'),
+//          url('./fonts/OpenSans-Regular.ttf') format('truetype');
+//  font-weight: normal;
+//  font-style: normal;
+//}
 
 @font-face {
   font-family: 'OpenSans-Bold';
