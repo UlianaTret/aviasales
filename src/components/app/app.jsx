@@ -28,7 +28,6 @@ const App = () => {
   } = useSelector((state) => state.tickets);
 
   useEffect(() => {
-    // dispatch(fetchTickets());
     if (!flagStop) dispatch(fetchTickets(searchId));
   }, [allTickets, status]);
 

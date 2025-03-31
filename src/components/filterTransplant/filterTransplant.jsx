@@ -64,7 +64,6 @@ const FilterTransplant = () => {
             name="AllTransfer"
             ref={refTAll}
             onInput={(event) => onchangeAllFilters(event)}
-            // value={filter.tAll}
           />
           <label htmlFor="AllTransfer">Все</label>
         </div>
@@ -75,7 +74,6 @@ const FilterTransplant = () => {
             name="0transfer"
             ref={refT0}
             onInput={(event) => onchangeAllTransfer(event)}
-            // value={filter.t0}
           />
           <label htmlFor="0transfer">Без пересадок</label>
         </div>
@@ -86,7 +84,6 @@ const FilterTransplant = () => {
             name="1transfer"
             ref={refT1}
             onInput={(event) => onchangeAllTransfer(event)}
-            // value={filter.t1}
           />
           <label htmlFor="1transfer">1 пересадка</label>
         </div>
@@ -97,7 +94,6 @@ const FilterTransplant = () => {
             name="2transfers"
             ref={refT2}
             onInput={(event) => onchangeAllTransfer(event)}
-            // value={filter.t2}
           />
           <label htmlFor="2transfers">2 пересадки</label>
         </div>
@@ -108,7 +104,6 @@ const FilterTransplant = () => {
             name="3transfers"
             ref={refT3}
             onInput={(event) => onchangeAllTransfer(event)}
-            // value={filter.t3}
           />
           <label htmlFor="3transfers">3 пересадки</label>
         </div>
