@@ -89,7 +89,7 @@ const ticketsSlice = createSlice({
         state.status = action.payload.data.stop ? 'loaded' : 'loading';
         state.error = false;
         state.tickets = [...state.tickets, ...action.payload.data.tickets];
-        state.filteredTickets = [...state.tickets, ...action.payload.data.tickets];
+        state.filteredTickets = [...state.filteredTickets, ...action.payload.data.tickets];
         state.flagStop = action.payload.data.stop;
         if (action.payload.searchId) state.searchId = action.payload.searchId;
       })
